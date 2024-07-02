@@ -36,3 +36,7 @@ def clean_data(raw_quotes):
         for _, value in raw_quote.items():
             quotes.append(value)
     return quotes
+
+def display_quotes(quotes):
+    for quote in quotes:
+        print(f'{quote}')
