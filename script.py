@@ -8,8 +8,7 @@ def main():
     raw_quotes = generate_quote(times)
     quotes = clean_data(raw_quotes)
     display_quotes(quotes)
-    ...
-
+    
 def check_argv(argv):
     if len(argv) > 2:
         exit("Pass only one argument")
