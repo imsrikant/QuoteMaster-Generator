@@ -1,5 +1,7 @@
 # QuoteMaster Generator
 
+![Demo](src/demo.gif "Demo gif.")
+
 #### Description:
 
 The QuoteMaster Generator is a Python project that fetches and displays quotes from Kanye West using the [Kanye Rest API](https://kanye.rest). The script allows the user to specify the number of quotes to fetch and display via command line arguments.
