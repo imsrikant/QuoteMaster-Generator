@@ -21,7 +21,7 @@ def check_argv(argv):
 def generate_quote(numbers=1):
     raw_quotes = []
     for _ in range(numbers):
-        response = requests.get(API)
+        response = requests.get(API, timeout=5)
         if response.status_code == 200:
             data = response.json()
             raw_quotes.append(data)
