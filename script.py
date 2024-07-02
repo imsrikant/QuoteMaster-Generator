@@ -17,3 +17,14 @@ def check_argv(argv):
         exit("Enter number to print that many quotes")
 
     return int(argv[1])
+
+def generate_quote(numbers=1):
+    raw_quotes = []
+    for _ in range(numbers):
+        response = requests.get('https://api.kanye.rest')
+        if response.status_code == 200:
+            data = response.json()
+            raw_quotes.append(data)
+        else:
+            exit("Failed")
+    return raw_quotes
