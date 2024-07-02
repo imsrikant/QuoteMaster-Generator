@@ -21,7 +21,7 @@ def check_argv(argv):
 def generate_quote(numbers=1):
     raw_quotes = []
     for _ in range(numbers):
-        response = requests.get('https://api.kanye.rest')
+        response = requests.get(API)
         if response.status_code == 200:
             data = response.json()
             raw_quotes.append(data)
