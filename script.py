@@ -40,3 +40,7 @@ def clean_data(raw_quotes):
 def display_quotes(quotes):
     for quote in quotes:
         print(f'{quote}')
+
+
+if __name__ == "__main__":
+    main()
