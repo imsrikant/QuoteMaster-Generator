@@ -4,6 +4,10 @@ import requests
 API = 'https://api.kanye.rest'
 
 def main():
+    times = check_argv(argv)
+    raw_quotes = generate_quote(times)
+    quotes = clean_data(raw_quotes)
+    display_quotes(quotes)
     ...
 
 def check_argv(argv):
