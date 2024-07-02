@@ -28,3 +28,11 @@ def generate_quote(numbers=1):
         else:
             exit("Failed")
     return raw_quotes
+
+
+def clean_data(raw_quotes):
+    quotes = []
+    for raw_quote in raw_quotes:
+        for _, value in raw_quote.items():
+            quotes.append(value)
+    return quotes
